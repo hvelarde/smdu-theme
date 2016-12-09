@@ -9,7 +9,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 // Basic Colors
-@main-bg: #fff; 
+@main-bg: #fff;
 @main-color: #666666;
 
 // content
@@ -20,9 +20,9 @@
 @coluna1: 20%;
 @coluna2: 20%;
 
-// header 
+// header
 @header: transparent !Important;
-@header-link: #666666; 
+@header-link: #666666;
 @header-text: #666666;
 
 // navegacao
@@ -90,7 +90,7 @@
 
 /********** Basic styles **********/
 body {
-	color: @main-text; 
+	color: @main-text;
 	font-family: @main-font;
 	margin: 0;
     background: ;
@@ -99,8 +99,8 @@ body {
 }
 
 a:link,
-a:visited, 
-#content a:link, 
+a:visited,
+#content a:link,
 dl.portlet a:link {
 	color:@main-link;
 	border-bottom: none;
@@ -114,7 +114,7 @@ a:hover {
 
 #content a:hover,
 dl.portlet a:hover {
-    color: @secondary-link !important; 
+    color: @secondary-link !important;
 }
 
 .clear {
@@ -122,10 +122,6 @@ dl.portlet a:hover {
 }
 
 /********** Main container **********/
-
-#wrapper {
-	.wrapper-size;
-}
 
 #main {
 	background: transparent;
@@ -166,7 +162,7 @@ header a:visited {
     color: @header-link;
     text-decoration: none;
 }
- 
+
 /* banner */
 
 #logo {
@@ -227,14 +223,14 @@ nav {
 
 nav ul {
 background: @nav;
-background:transparent;	
+background:transparent;
 color: @nav-link;
 }
 
 nav a {
-padding: 1em; 
-text-decoration: none; 
-min-width: 3em; 
+padding: 1em;
+text-decoration: none;
+min-width: 3em;
 display: inline-block;
 }
 
@@ -256,7 +252,7 @@ nav li:hover > ul.submenu {
   -webkit-box-shadow: 0 5px 10px #d6d6d6;
   box-shadow: 0 5px 10px #d6d6d6;
 }
-  
+
 
 nav ul.submenu a.state-published:hover,
 nav .selected ul.submenu .state-published {
@@ -308,7 +304,7 @@ h2 {
 	margin-bottom: 0.5em;
 }
 #content .documentDescription, #content #description {
-    color: lighten(@main-text, 10%); 
+    color: lighten(@main-text, 10%);
     font-weight: normal;
     margin-bottom: 1em;
 }
@@ -361,8 +357,8 @@ dl.portlet dt.portletHeader a {
 }
 
 /* lists inside columns */
-aside dl, 
-aside dd, 
+aside dl,
+aside dd,
 aside ul {
 	padding: 0;
 	margin: 0;
@@ -418,17 +414,17 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     line-height: 30%;
     margin-top: 6%;
 }
-    
-    
+
+
 #header-text {
     padding-left: 0;
     }
-    
-    
+
+
 #portal-description{
     font-weight:normal;
     font-size: 45%;}
-    
+
 
 /********** Footer **********/
 footer {
@@ -457,9 +453,9 @@ footer p {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 
-  
+
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	body {
@@ -469,7 +465,7 @@ footer p {
 		width: 90%;
 	}
 	#main {
-		margin-top: 4em; 
+		margin-top: 4em;
 		display: block;
 	}
 	div.cell {
@@ -478,7 +474,7 @@ footer p {
 		width: 100% !important;
 		margin-left: -100% !important;
 	}
-	#logo { 
+	#logo {
 		float: right;
 	}
 	#portal-breadcrumbs {
@@ -540,7 +536,7 @@ footer p {
 	    width: 100%;
 	}
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	#logo {

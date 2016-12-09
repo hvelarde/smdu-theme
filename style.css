@@ -51,16 +51,12 @@
 .gradient {
   background: -webkit-linear-gradient(#f5f5f5, #ffffff);
   /* For Safari */
-
   background: -o-linear-gradient(#f5f5f5, #ffffff);
   /* For Opera 11.1 to 12.0 */
-
   background: -moz-linear-gradient(#f5f5f5, #ffffff);
   /* For Firefox 3.6 to 15 */
-
   background: linear-gradient(#f5f5f5, #ffffff);
   /* Standard syntax (must be last) */
-
 }
 .wrapper-size {
   margin: 0 auto;
@@ -83,16 +79,12 @@ body {
   border-top: 7px solid #008044;
   background: -webkit-linear-gradient(#f5f5f5, #ffffff);
   /* For Safari */
-
   background: -o-linear-gradient(#f5f5f5, #ffffff);
   /* For Opera 11.1 to 12.0 */
-
   background: -moz-linear-gradient(#f5f5f5, #ffffff);
   /* For Firefox 3.6 to 15 */
-
   background: linear-gradient(#f5f5f5, #ffffff);
   /* Standard syntax (must be last) */
-
 }
 a:link,
 a:visited,
@@ -115,11 +107,6 @@ dl.portlet a:hover {
   clear: both;
 }
 /********** Main container **********/
-#wrapper {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px;
-}
 #main {
   background: transparent;
 }
@@ -422,16 +409,13 @@ footer p {
   padding-top: 10px;
 }
 #portal-siteactions {
-  text-align: right;
+  text-align: left;
 }
 /**** RESPONSIVE ***/
 #btnav i {
   display: none;
 }
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
-}
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   body {
@@ -528,59 +512,4 @@ footer p {
     padding-left: 2em;
     padding-right: 2em;
   }
-}
-
-/* rodapé */
-
-footer p {
-  margin-bottom: 0.5em;
-}
-
-.footer-global {
-  background-color: #ccc;
-}
-
-.footer-site {
-  background-color: #fff;
-}
-
-.footer-column {
-  display: inline-block; width: 19%;
-  vertical-align: top;
-}
-
-/* sprites */
-
-.icons-logo {
-  background-image: url('img/pmsp.png');
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 50px;
-  margin-top: 1em;
-  width: 182px;
-}
-
-.icons-facebook, .icons-syndication, .icons-twitter, .icons-youtube {
-  background-image: url('img/icons.png');
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 34px;
-  margin-top: 1em;
-  width: 34px;
-}
-
-.icons-facebook {
-  background-position: -100px -26px;
-}
-
-.icons-syndication {
-  background-position: -26px -26px;
-}
-
-.icons-twitter {
-  background-position: -176px -26px;
-}
-
-.icons-youtube {
-  background-position: -176px -103px;
 }
