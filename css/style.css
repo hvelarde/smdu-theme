@@ -705,37 +705,13 @@ footer .width-full {
   left: 0;
 }
 
-.footerContainer {
-  min-height: 500px;
-  display: inline-block;
-  background: #eee;
-  padding: 20px 30px 20px 30px; }
-  .footerContainer option, .footerContainer a, .footerContainer span {
-    color: #000; }
+#portal-colophon {
+    margin: 0;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+}
 
-.footerContainer > div > .col-md-3 {
-  min-width: 240px;
-  display: inline-block; }
 
-#footerSecondRow {
-  margin-right: 20px;
-  margin-top: 50px;
-  padding-top: 20px; }
-  #footerSecondRow .col-md-3:nth-child(4) img {
-    width: 40px; }
-
-#footerPrimaryRow {
-  margin-right: 20px; }
-
-.footerTitleItem {
-  font-weight: bold;
-  margin: 10px 0px 10px 0px; }
-
-#footer-info {
-  padding-top: 10px; }
-
-#portal-siteactions {
-  text-align: left; }
 
 /* CONTRASTE */
 .contraste {

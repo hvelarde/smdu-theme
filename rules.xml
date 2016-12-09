@@ -54,6 +54,8 @@
         </rules>
 
         <replace css:content="#portal-footer-wrapper" css:theme-children="#portal-footer-wrapper" />
+        <drop css:content="#portal-footer" />
+        <drop css:content="#portal-siteactions" />
     </rules>
 
 </rules>
