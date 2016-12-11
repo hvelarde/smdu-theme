@@ -204,10 +204,12 @@ header {
   #portal-searchbox input.searchButton {
     padding: 0.5em;
     border: 0;
-    background: transparent;
+    background: #9c9c9c;
     width: 35px;
     font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #fff;
+   }
 
 #LSResult {
   margin-top: 0; }
@@ -238,83 +240,111 @@ nav {
   clear: both;
   font-size: 0.9em;
   background: transparent;
-  /* dropdown compatibility */ }
-  nav ul {
-    background: #ffffff;
-    background: transparent;
-    color: #666666;
-    /*submenus cor*/ }
-    nav ul li:nth-child(1) a::before {
-      background: #d90013; }
-    nav ul li:nth-child(2) a::before {
-      background: #f38003; }
-    nav ul li:nth-child(3) a::before {
-      background: #008044; }
-    nav ul li:nth-child(4) a::before {
-      background: #339fd6; }
-    nav ul li:nth-child(1) .submenu li a::before {
-      background: #d90013; }
-    nav ul li:nth-child(1) .submenu li a {
-      color: #000; }
-    nav ul li:nth-child(2) .submenu li a::before {
-      background: #f38003; }
-    nav ul li:nth-child(2) .submenu li a {
-      color: #000; }
-    nav ul li:nth-child(3) .submenu li a::before {
-      background: #008044; }
-    nav ul li:nth-child(3) .submenu li a {
-      color: #000; }
-    nav ul li:nth-child(4) .submenu li a::before {
-      background: #339fd6; }
-    nav ul li:nth-child(4) .submenu li a {
-      color: #000; }
-  nav a {
-    padding: 1em;
-    text-decoration: none;
-    min-width: 3em;
-    display: inline-block; }
-  nav li a {
-    line-height: auto;
-    padding: 9px 15px; }
-    nav li a::before {
-      content: " ";
-      width: 10px;
-      height: 10px;
-      margin: 5px;
-      background-color: #000;
-      display: inline-block;
-      vertical-align: middle; }
-  nav li:hover {
-    position: relative; }
-  nav li:hover > ul.submenu {
-    display: block;
-    position: absolute;
-    z-index: 99999;
-    background: #ffffff;
-    background: #F5F5F5;
-    text-align: left;
-    width: 200px;
-    -moz-box-shadow: 0 5px 10px #d6d6d6;
-    -webkit-box-shadow: 0 5px 10px #d6d6d6;
-    box-shadow: 0 5px 10px #d6d6d6; }
-  nav li:first-child a {
-    padding-left: 0; }
-  nav ul.submenu a.state-published:hover,
-  nav .selected ul.submenu .state-published {
-    color: #666666; }
-  nav .submenu .submenu {
-    display: none !important; }
-  nav .submenu li a {
-    width: 160px; }
+}
+nav ul {
+  background: #ffffff;
+  background: transparent;
+  color: #666666;
+  position: relative;
+}
+nav ul li {
+  margin-right: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+nav ul li:nth-child(1):hover {border-bottom: 7px solid #d90013;}
+nav ul li:nth-child(2):hover {border-bottom: 7px solid #f38003;}
+nav ul li:nth-child(3):hover {border-bottom: 7px solid #008044;}
+nav ul li:nth-child(4):hover {border-bottom: 7px solid #339fd6;}
+nav ul li:hover li,
+nav ul .submenu li:hover {border-bottom: none;}
 
-.selected ul.submenu .state-published {
-  color: #008044 !important; }
+nav ul li .submenu {
+  background: #dedede;
+  opacity: .95;
+  padding: 20px;
+}
+nav ul li .submenu .submenu {
+  padding: 0;
+}
 
-ul.submenu a.state-published:hover {
-  color: #001a0e !important; }
+nav ul li:nth-child(1) a::before {background: #d90013;}
+nav ul li:nth-child(2) a::before {background: #f38003;}
+nav ul li:nth-child(3) a::before {background: #008044;}
+nav ul li:nth-child(4) a::before {background: #339fd6;}
 
-nav ul li a.plain {
-  font-weight: bold; }
+nav ul li .submenu li a::before {
+  background: transparent;
+  color: #fff !important;
+  outline: 1px solid #fff;
+}
+
+#portal-globalnav ul.submenu li a {
+  width: 100%;
+}
+nav a {
+  padding: 1em;
+  text-decoration: none;
+  min-width: 3em;
+  display: inline-block;
+  line-height: auto;
+  padding:9px 0 9px 0;
+}
+nav li li a {
+    padding: 0;
+}
+
+nav li a::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin: 0 5px 0 0;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+nav li li a::before {
+  display: none;
+}
+
+nav li:hover > ul.submenu {
+  display: block;
+  position: absolute;
+  z-index: 99999;
+  text-align: left;
+  width: 200px;
+  -moz-box-shadow: 0 5px 10px #d6d6d6;
+  -webkit-box-shadow: 0 5px 10px #d6d6d6;
+  box-shadow: 0 5px 10px #d6d6d6;
+  width: 100%;
+}
+ul.submenu a.state-published,
+ul.submenu a.state-private {
+    color: #000 !important;
+}
+nav li:first-child a {
+  padding-left: 0;
+}
+nav ul.submenu a.state-published:hover,
+nav .selected ul.submenu .state-published,
+nav a:hover {
+  color: #000 !important;
+}
+.submenu>li {
+    width: 160px;
+    float: left !important;
+    font-weight: bold;
+}
+.submenu>li li {
+  font-weight: normal;
+}
+.submenu .submenu {
+  position: relative !important;
+  display: block !important;
+  left: 0;
+  float: none;
+}
+
 
 /*********** Portlets ***********/
 /* general styles */
@@ -609,6 +639,32 @@ h3 {
 .slideshow ul, .slideshow ul li {
   list-style: none !important; }
 
+.destaque-vermelho h1, .destaque-vermelho h2 {
+  position: absolute;
+  bottom: 0;
+  background: #dc471f;
+  margin: 0;
+  padding: 10px;
+  opacity: 0.95;
+  left: 0;
+  right: 0;
+}
+.destaque-azul h1, .destaque-azul h2 {
+  position: absolute;
+  bottom: 0;
+  background: #3ba5cd;
+  margin: 0;
+  padding: 10px;
+  opacity: 0.95;
+  left: 0;
+  right: 0;
+}
+.destaque-vermelho a, #content .destaque-vermelho a:hover,
+.destaque-azul a, #content .destaque-azul a:hover {
+  color: #fff !important;
+}
+
+
 /* news */
 .newsStyle h2 {
   background-color: rgba(0, 0, 0, 0.6);
@@ -743,6 +799,12 @@ footer .width-full {
       color: #ffffff; }
   .contraste #content a, .contraste #content p, .contraste #content span, .contraste #content h1, .contraste #content h2, .contraste #content h3, .contraste #content h4, .contraste #content h5, .contraste #content h6, .contraste .documentByLine a, .contraste .documentByLine p, .contraste .documentByLine span, .contraste .documentByLine h1, .contraste .documentByLine h2, .contraste .documentByLine h3, .contraste .documentByLine h4, .contraste .documentByLine h5, .contraste .documentByLine h6, .contraste .documentFirstHeading a, .contraste .documentFirstHeading p, .contraste .documentFirstHeading span, .contraste .documentFirstHeading h1, .contraste .documentFirstHeading h2, .contraste .documentFirstHeading h3, .contraste .documentFirstHeading h4, .contraste .documentFirstHeading h5, .contraste .documentFirstHeading h6 {
     color: #ffffff !important; }
+  .contraste footer,
+  .contraste footer div,
+  .contraste h4 {
+    background: #000 !important;
+    color: #fff !important;
+  }
 
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
