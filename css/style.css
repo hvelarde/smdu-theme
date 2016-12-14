@@ -113,9 +113,13 @@ body {
   width: 100%;
 }
 
-#main, #main-header {
+#main, #main-header,
+#smdu-global-footer,
+.identity-wrapper,
+#smdu-site-footer,
+#portal-colophon {
   background: transparent;
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -230,7 +234,9 @@ header {
 
 #second-header .col-md-4:nth-child(3) {
   position: relative;
-  top: 3em; }
+  top: 3.5em;
+  font-size: 14px;
+}
 
 /* Navigation */
 #btnav > i {
@@ -652,7 +658,8 @@ h3 {
 
 .destaque-vermelho h1, .destaque-vermelho h2,
 .destaque-azul h1, .destaque-azul h2,
-.destaque-verder h1, .destaque-verde h2 {
+.destaque-verder h1, .destaque-verde h2,
+.destaque-preto h1, .destaque-preto h2 {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -664,11 +671,13 @@ h3 {
 .destaque-azul h1, .destaque-azul h2 {background: #3ba5cd;}
 .destaque-vermelho h1, .destaque-vermelho h2 {background: #dc471f;}
 .destaque-verde h1, .destaque-verde h2 {background: #008044;}
+.destaque-preto h1, .destaque-preto h2 {background: #000;}
 
 .destaque-vermelho a, #content .destaque-vermelho a:hover,
 .destaque-azul a, #content .destaque-azul a:hover,
 .destaque-verde a, #content .destaque-verde a:hover,
-.destaque-grande a, #content .destaque-grande a:hover {
+.destaque-grande a, #content .destaque-grande a:hover,
+.destaque-preto a, #content .destaque-preto a:hover {
   color: #fff !important;
 }
 
@@ -768,9 +777,7 @@ footer .width-full {
   float: none;
   left: 0;
 }
-
 #portal-colophon {
-    margin: 0;
     padding: 1em;
     border-top: 1px solid #ccc;
 }
