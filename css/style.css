@@ -234,8 +234,9 @@ header {
 
 #second-header .col-md-4:nth-child(3) {
   position: relative;
-  top: 3.5em;
-  font-size: 14px;
+  top: 4em;
+  font-size: 13px;
+  text-align: center;
 }
 
 /* Navigation */
@@ -337,7 +338,7 @@ nav a:hover {
   color: #000 !important;
 }
 .submenu>li {
-    width: 160px;
+    width: 20%;
     float: left !important;
     font-weight: bold;
 }
