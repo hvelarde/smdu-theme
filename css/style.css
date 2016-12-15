@@ -679,6 +679,11 @@ h3 {
   color: #fff !important;
 }
 
+.destaque-vermelho img, .destaque-azul img, .destaque-verde img, .destaque-preto img {
+  float: none !important;
+  margin: 0 !important;
+}
+
 
 /* news */
 .newsStyle h2 {
