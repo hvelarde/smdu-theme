@@ -95,7 +95,7 @@ body {
 
 /*Definindo propriedades padrões para abstrair*/
 .propertiesCommon, a:visited, a:link, a:hover, #content a:link, dl.portlet a:link {
-  color: #008044;
+  color: #444;
   border-bottom: none; }
 
 .propertiesCommonHover, #content a:hover, dl.portlet a:hover {
