@@ -894,3 +894,9 @@ footer .width-full {
 
 .userrole-authenticated #portal-personaltools {
   display: block; }
+
+/* workaround for https://github.com/collective/collective.nitf/issues/183 */
+.slideshow-container {
+  background: #f4f3ee;
+  position: relative;
+}
